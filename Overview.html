@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+
+    <title>Overview</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom styling -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <!-- External JS libraries -->
+    <script src="js/d3.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/Overview.js"></script>
+
+</head>
+
+<body class="bgnc">
+
+<div class="container">
+    <div class="row">
+        <!-- Title -->
+        <div style="position: absolute; align-content: center; top: 5vh; left:5vh">
+            <h1 id="title" class="title-text">Overview </h1>
+            <h2 class="intro-text">(Click on a smile for more details)</h2>
+        </div>
+        <!-- Chart -->
+        <div style="position: absolute; align-content: center; left:0; top: 20%; width: 100%; height: 85%">
+            <h1 id="chart" style="position: absolute; align-content: center; width: 100%; height: 80%"></h1>
+        </div>
+        <!-- Text -->
+        <div style="position: absolute; align-content: center; left:2vh; top: 90%; width: 100%; height: 10%">
+            <h1 id="text" class="tooltip-text">Website by: Malak Sadek & Nils Howland<br/><br/>Akari Asai, Sara Evensen,
+                Behzad Golshan, Alon Halevy, Vivian Li, Andrei Lopatenko,
+                Daniela Stepanov, Yoshihiko Suhara, Wang-Chiew Tan, Yinzhan Xu,<br/>
+                "HappyDB: A Corpus of 100,000 Crowdsourced Happy Moments", LREC '18, May 2018.<br/><br/>Navigation Menu
+                by: https://codepen.io/woyax/pen/EzMPGj</h1>
+        </div>
+    </div>
+</div>
+
+<!--Menu code obtained from: https://codepen.io/woyax/pen/EzMPGj and modified to suit website-->
+<nav role='navigation'>
+    <div id="menuToggle">
+
+        <input type="checkbox"/>
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+            <a href="OpeningPage.html">
+                <li>Home</li>
+            </a>
+            <a href="Visualizations.html?Category=affection">
+                <li>Affection</li>
+            </a>
+            <a href="Visualizations.html?Category=achievement">
+                <li>Achievement</li>
+            </a>
+            <a href="Visualizations.html?Category=bonding">
+                <li>Bonding</li>
+            </a>
+            <a href="Visualizations.html?Category=enjoyment">
+                <li>Enjoyment</li>
+            </a>
+            <a href="Visualizations.html?Category=nature">
+                <li>Nature</li>
+            </a>
+            <a href="Visualizations.html?Category=leisure">
+                <li>Leisure</li>
+            </a>
+            <a href="Visualizations.html?Category=exercise">
+                <li>Exercise</li>
+            </a>
+            <a href="Overview.html">
+                <li>Overview</li>
+            </a>
+        </ul>
+    </div>
+</nav>
+
+
+</body>
+
+</html>

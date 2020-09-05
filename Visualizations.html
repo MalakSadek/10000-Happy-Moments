@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+
+    <title>Visualizations</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom styling -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <!-- Custom CSS -->
+    <script src="js/d3.min.js"></script>
+    <script src="js/Visualizations.js"></script>
+    <script src="js/scatterplot.js"></script>
+    <script src="js/donut.js"></script>
+    <script src="js/barchart.js"></script>
+    <script src="js/stackedchart.js"></script>
+    <script src="js/areachart.js"></script>
+
+</head>
+
+<body class="bgnc">
+
+<div class="container">
+    <!-- Title -->
+    <div class="row">
+        <div style="position: absolute; align-content: center; top: 1vh; left: 10vh">
+            <h1 id="title" class="title-text"></h1>
+            <div class="row" style="top: 30vh; left: 10vh; height: 2vh">
+            </div>
+            <!-- Filter Label -->
+            <div class="row" style="top: 30vh">
+                <label class="tooltip-text">Reflection Period:</label>
+                <!-- Filter Dropdown -->
+                <div class="row" style="top: 30vh; left: 10vh">
+                    <select id="reflection" class="tooltip-text" style="left: 20vh; width: 50%; height:2vh">
+                        <option selected value="24h">24 Hours</option>
+                        <option value="3m">3 Months</option>
+                    </select>
+                </div>
+                <label class="intro-text" style="position: absolute; align-content: center; left:-9vh; top: 20vh">Moments per Age:</label>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scatterplot -->
+    <div class="row" id="chart"
+         style="position: absolute; align-content: center; left:0; right:5vh; top: 25vh; width: 59%; height: 85%">
+    </div>
+    <!-- Brushing Timeline-->
+    <div class="row" id="timeline"
+         style="position: absolute; align-content: center; left:0; right:5vh; top: 80vh; width: 100%; height: 20%">
+         <label class="tooltip-text" style="position: absolute; align-content: center; left:8vh; top: 5vh">Explore Age Spans:</label>
+    </div>
+    <!-- Gender Donut Chart -->
+    <div class="col-lg-1" id="gender"
+         style="position: absolute; align-content: center; right:15vh; top: 18vh; width: 30%; height: 50%">
+         <label class="intro-text" style="position: absolute; align-content: center; left:-12vh; top: 18vh">Moments per Gender:</label>
+        <label style="font-family:'KG HAPPY Solid',serif; position: absolute; align-content: center; left:20vh; top: 18vh">Other</label>
+    </div>
+    <!-- Martial Status & Parenthood Stacked Bar Chart -->
+    <div class="col-lg-2" id="house"
+         style="position: absolute; align-content: center;  right:15vh; top: 65vh; width: 30%; height: 40%">
+              <label class="intro-text" style="position: absolute; align-content: center; left:-12vh; top: -2vh">Moments per Status:</label>
+    </div>
+    <!-- Country Bar Chart -->
+    <div class="col-lg-3" id="country"
+         style="position: absolute; align-content: center; right: 15vh; top: 5vh; width: 30%; height: 33%">
+              <label class="intro-text" style="position: absolute; align-content: center; left:-12vh; top: -4vh">Moments per Country:</label>
+    </div>
+</div>
+
+<!--Menu code obtained from: https://codepen.io/woyax/pen/EzMPGj and modified to suit website-->
+<nav role='navigation'>
+    <div id="menuToggle">
+        <input type="checkbox"/>
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+            <a href="OpeningPage.html">
+                <li>Home</li>
+            </a>
+            <a onmousedown="changeCategory('affection')">
+                <li>Affection</li>
+            </a>
+            <a onmousedown="changeCategory('achievement')">
+                <li>Achievement</li>
+            </a>
+            <a onmousedown="changeCategory('bonding')">
+                <li>Bonding</li>
+            </a>
+            <a onmousedown="changeCategory('enjoyment')">
+                <li>Enjoyment</li>
+            </a>
+            <a onmousedown="changeCategory('nature')">
+                <li>Nature</li>
+            </a>
+            <a onmousedown="changeCategory('leisure')">
+                <li>Leisure</li>
+            </a>
+            <a onmousedown="changeCategory('exercise')">
+                <li>Exercise</li>
+            </a>
+            <a href="Overview.html">
+                <li>Overview</li>
+            </a>
+        </ul>
+    </div>
+</nav>
+
+</body>
+</html>
