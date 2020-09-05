@@ -21,9 +21,9 @@ Directly from the overview chart, it can be identified that “achievement” an
 
 # Try Out the Website
 
-The website can be accessed at: 
+The website can be accessed at: https://www.temporary-url.com/C307
 
-More information about the context of the project and the design process followed can be found at: 
+More information about the context of the project and the design process followed can be found at: https://malaksadek.wordpress.com/2020/09/05/10000-happy-moments/
 
 # Contact
 
